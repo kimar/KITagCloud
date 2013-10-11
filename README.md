@@ -1,10 +1,12 @@
-# KITagList
+# KITagCloud
 
-A simple TagCloud. Further discription follows…
-
-![Screenshot](http://kimar.github.io/screenshots/kitagcloud/1.png)
+A simple TagCloud.
 
 See the Example App for further Information.
+
+Further discription follows…
+
+![Screenshot](http://kimar.github.io/screenshots/kitagcloud/1.png)
 
 **The MIT License (MIT)**
 
