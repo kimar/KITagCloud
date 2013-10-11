@@ -1,6 +1,8 @@
 # KITagList
 
-A simple TagCloud. Further discription follows...
+A simple TagCloud. Further discription follows…
+
+![Screenshot](http://kimar.github.io/screenshots/kitagcloud/1.png)
 
 See the Example App for further Information.
 
