@@ -8,7 +8,7 @@
 //  Thanks to Dominic Wroblewski for inspiring me ;-)
 //
 
-#import "KITagList.h"
+#import "KITagCloud.h"
 #import <QuartzCore/QuartzCore.h>
 
 #define CORNER_RADIUS 2.0f
@@ -20,13 +20,13 @@
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
-@interface KITagList()
+@interface KITagCloud()
 
 - (void)touchedTag:(id)sender;
 
 @end
 
-@implementation KITagList
+@implementation KITagCloud
 
 @synthesize view, automaticResize;
 @synthesize tagDelegate = _tagDelegate;
@@ -109,8 +109,8 @@
 {
     UITapGestureRecognizer *t = (UITapGestureRecognizer *)sender;
     KITagView *tagView = (KITagView *)t.view;
-    if(tagView && self.tagDelegate && [self.tagDelegate respondsToSelector:@selector(tagList:selectedTag:)])
-        [self.tagDelegate tagList:self selectedTag:tagView.originalTag];
+    if(tagView && self.tagDelegate && [self.tagDelegate respondsToSelector:@selector(tagCloud:selectedTag:)])
+        [self.tagDelegate tagCloud:self selectedTag:tagView.originalTag];
 }
 
 - (void)layoutSubviews

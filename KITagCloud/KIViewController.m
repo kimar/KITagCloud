@@ -7,13 +7,13 @@
 //
 
 #import "KIViewController.h"
-#import "KITagList.h"
+#import "KITagCloud.h"
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
-@interface KIViewController () <KITagListDelegate>
+@interface KIViewController () <KITagCloudDelegate>
 {
-    IBOutlet KITagList *_tagList;
+    IBOutlet KITagCloud *_tagList;
 }
 @end
 
@@ -48,7 +48,7 @@
 }
 
 #pragma mark - KITagListDelegate
-- (void) tagList:(KITagList *)tagList selectedTag:(KITag *)tag
+- (void) tagCloud:(KITagCloud *)tagCloud selectedTag:(KITag *)tag
 {
     [[[UIAlertView alloc] initWithTitle:@"Tag selected!"
                                 message:[NSString stringWithFormat:@"\"%@\" has been selected!", tag.text]

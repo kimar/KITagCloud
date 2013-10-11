@@ -10,18 +10,20 @@
 		2A71506A1808306D008411A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7150691808306D008411A2 /* Foundation.framework */; };
 		2A71506C1808306D008411A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A71506B1808306D008411A2 /* CoreGraphics.framework */; };
 		2A71506E1808306D008411A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A71506D1808306D008411A2 /* UIKit.framework */; };
-		2A7150741808306D008411A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A7150721808306D008411A2 /* InfoPlist.strings */; };
-		2A7150761808306D008411A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7150751808306D008411A2 /* main.m */; };
-		2A71507A1808306D008411A2 /* KIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7150791808306D008411A2 /* KIAppDelegate.m */; };
-		2A71507D1808306D008411A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A71507B1808306D008411A2 /* Main.storyboard */; };
-		2A7150801808306D008411A2 /* KIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A71507F1808306D008411A2 /* KIViewController.m */; };
-		2A7150821808306D008411A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7150811808306D008411A2 /* Images.xcassets */; };
 		2A7150891808306D008411A2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7150881808306D008411A2 /* XCTest.framework */; };
 		2A71508A1808306D008411A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7150691808306D008411A2 /* Foundation.framework */; };
 		2A71508B1808306D008411A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A71506D1808306D008411A2 /* UIKit.framework */; };
-		2A7150931808306D008411A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A7150911808306D008411A2 /* InfoPlist.strings */; };
-		2A7150951808306D008411A2 /* KITagListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7150941808306D008411A2 /* KITagListTests.m */; };
-		2A7150A1180830A8008411A2 /* KITagList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7150A0180830A8008411A2 /* KITagList.m */; };
+		2A7150B618083DCB008411A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7150A718083DCB008411A2 /* Main.storyboard */; };
+		2A7150B718083DCB008411A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A7150A918083DCB008411A2 /* InfoPlist.strings */; };
+		2A7150B818083DCB008411A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7150AB18083DCB008411A2 /* Images.xcassets */; };
+		2A7150B918083DCB008411A2 /* KIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7150AD18083DCB008411A2 /* KIAppDelegate.m */; };
+		2A7150BA18083DCB008411A2 /* KITagCloud-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A7150AE18083DCB008411A2 /* KITagCloud-Info.plist */; };
+		2A7150BC18083DCB008411A2 /* KIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7150B418083DCB008411A2 /* KIViewController.m */; };
+		2A7150BD18083DCB008411A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7150B518083DCB008411A2 /* main.m */; };
+		2A7150CB18083DD9008411A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A7150C718083DD9008411A2 /* InfoPlist.strings */; };
+		2A7150CC18083DD9008411A2 /* KITagCloudTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A7150C918083DD9008411A2 /* KITagCloudTests-Info.plist */; };
+		2A7150CD18083DD9008411A2 /* KITagListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7150CA18083DD9008411A2 /* KITagListTests.m */; };
+		2A7150D118083E37008411A2 /* KITagCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7150D018083E37008411A2 /* KITagCloud.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,27 +37,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A7150661808306D008411A2 /* KITagList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KITagList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A7150661808306D008411A2 /* KITagCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KITagCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7150691808306D008411A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2A71506B1808306D008411A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2A71506D1808306D008411A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2A7150711808306D008411A2 /* KITagList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KITagList-Info.plist"; sourceTree = "<group>"; };
-		2A7150731808306D008411A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2A7150751808306D008411A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2A7150771808306D008411A2 /* KITagList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KITagList-Prefix.pch"; sourceTree = "<group>"; };
-		2A7150781808306D008411A2 /* KIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIAppDelegate.h; sourceTree = "<group>"; };
-		2A7150791808306D008411A2 /* KIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIAppDelegate.m; sourceTree = "<group>"; };
-		2A71507C1808306D008411A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2A71507E1808306D008411A2 /* KIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIViewController.h; sourceTree = "<group>"; };
-		2A71507F1808306D008411A2 /* KIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIViewController.m; sourceTree = "<group>"; };
-		2A7150811808306D008411A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2A7150871808306D008411A2 /* KITagListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KITagListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A7150871808306D008411A2 /* KITagCloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KITagCloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7150881808306D008411A2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		2A7150901808306D008411A2 /* KITagListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KITagListTests-Info.plist"; sourceTree = "<group>"; };
-		2A7150921808306D008411A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2A7150941808306D008411A2 /* KITagListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KITagListTests.m; sourceTree = "<group>"; };
-		2A71509F180830A8008411A2 /* KITagList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KITagList.h; sourceTree = "<group>"; };
-		2A7150A0180830A8008411A2 /* KITagList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KITagList.m; sourceTree = "<group>"; };
+		2A7150A818083DCB008411A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A7150AA18083DCB008411A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A7150AB18083DCB008411A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2A7150AC18083DCB008411A2 /* KIAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIAppDelegate.h; sourceTree = "<group>"; };
+		2A7150AD18083DCB008411A2 /* KIAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIAppDelegate.m; sourceTree = "<group>"; };
+		2A7150AE18083DCB008411A2 /* KITagCloud-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KITagCloud-Info.plist"; sourceTree = "<group>"; };
+		2A7150AF18083DCB008411A2 /* KITagCloud-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KITagCloud-Prefix.pch"; sourceTree = "<group>"; };
+		2A7150B318083DCB008411A2 /* KIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIViewController.h; sourceTree = "<group>"; };
+		2A7150B418083DCB008411A2 /* KIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIViewController.m; sourceTree = "<group>"; };
+		2A7150B518083DCB008411A2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A7150C818083DD9008411A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A7150C918083DD9008411A2 /* KITagCloudTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KITagCloudTests-Info.plist"; sourceTree = "<group>"; };
+		2A7150CA18083DD9008411A2 /* KITagListTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KITagListTests.m; sourceTree = "<group>"; };
+		2A7150CF18083E37008411A2 /* KITagCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KITagCloud.h; sourceTree = "<group>"; };
+		2A7150D018083E37008411A2 /* KITagCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KITagCloud.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +87,8 @@
 		2A71505D1808306D008411A2 = {
 			isa = PBXGroup;
 			children = (
-				2A71506F1808306D008411A2 /* KITagList */,
-				2A71508E1808306D008411A2 /* KITagListTests */,
+				2A7150A618083DCB008411A2 /* KITagCloud */,
+				2A7150C618083DD9008411A2 /* KITagCloudTests */,
 				2A7150681808306D008411A2 /* Frameworks */,
 				2A7150671808306D008411A2 /* Products */,
 			);
@@ -95,8 +97,8 @@
 		2A7150671808306D008411A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A7150661808306D008411A2 /* KITagList.app */,
-				2A7150871808306D008411A2 /* KITagListTests.xctest */,
+				2A7150661808306D008411A2 /* KITagCloud.app */,
+				2A7150871808306D008411A2 /* KITagCloudTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,65 +114,49 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2A71506F1808306D008411A2 /* KITagList */ = {
+		2A7150A618083DCB008411A2 /* KITagCloud */ = {
 			isa = PBXGroup;
 			children = (
-				2A71509E180830A8008411A2 /* KITagList */,
-				2A7150781808306D008411A2 /* KIAppDelegate.h */,
-				2A7150791808306D008411A2 /* KIAppDelegate.m */,
-				2A71507B1808306D008411A2 /* Main.storyboard */,
-				2A71507E1808306D008411A2 /* KIViewController.h */,
-				2A71507F1808306D008411A2 /* KIViewController.m */,
-				2A7150811808306D008411A2 /* Images.xcassets */,
-				2A7150701808306D008411A2 /* Supporting Files */,
+				2A7150CE18083E37008411A2 /* KITagCloud */,
+				2A7150A718083DCB008411A2 /* Main.storyboard */,
+				2A7150A918083DCB008411A2 /* InfoPlist.strings */,
+				2A7150AB18083DCB008411A2 /* Images.xcassets */,
+				2A7150AC18083DCB008411A2 /* KIAppDelegate.h */,
+				2A7150AD18083DCB008411A2 /* KIAppDelegate.m */,
+				2A7150AE18083DCB008411A2 /* KITagCloud-Info.plist */,
+				2A7150AF18083DCB008411A2 /* KITagCloud-Prefix.pch */,
+				2A7150B318083DCB008411A2 /* KIViewController.h */,
+				2A7150B418083DCB008411A2 /* KIViewController.m */,
+				2A7150B518083DCB008411A2 /* main.m */,
 			);
-			path = KITagList;
+			path = KITagCloud;
 			sourceTree = "<group>";
 		};
-		2A7150701808306D008411A2 /* Supporting Files */ = {
+		2A7150C618083DD9008411A2 /* KITagCloudTests */ = {
 			isa = PBXGroup;
 			children = (
-				2A7150711808306D008411A2 /* KITagList-Info.plist */,
-				2A7150721808306D008411A2 /* InfoPlist.strings */,
-				2A7150751808306D008411A2 /* main.m */,
-				2A7150771808306D008411A2 /* KITagList-Prefix.pch */,
+				2A7150C718083DD9008411A2 /* InfoPlist.strings */,
+				2A7150C918083DD9008411A2 /* KITagCloudTests-Info.plist */,
+				2A7150CA18083DD9008411A2 /* KITagListTests.m */,
 			);
-			name = "Supporting Files";
+			path = KITagCloudTests;
 			sourceTree = "<group>";
 		};
-		2A71508E1808306D008411A2 /* KITagListTests */ = {
+		2A7150CE18083E37008411A2 /* KITagCloud */ = {
 			isa = PBXGroup;
 			children = (
-				2A7150941808306D008411A2 /* KITagListTests.m */,
-				2A71508F1808306D008411A2 /* Supporting Files */,
+				2A7150CF18083E37008411A2 /* KITagCloud.h */,
+				2A7150D018083E37008411A2 /* KITagCloud.m */,
 			);
-			path = KITagListTests;
-			sourceTree = "<group>";
-		};
-		2A71508F1808306D008411A2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2A7150901808306D008411A2 /* KITagListTests-Info.plist */,
-				2A7150911808306D008411A2 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2A71509E180830A8008411A2 /* KITagList */ = {
-			isa = PBXGroup;
-			children = (
-				2A71509F180830A8008411A2 /* KITagList.h */,
-				2A7150A0180830A8008411A2 /* KITagList.m */,
-			);
-			path = KITagList;
+			path = KITagCloud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2A7150651808306D008411A2 /* KITagList */ = {
+		2A7150651808306D008411A2 /* KITagCloud */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A7150981808306D008411A2 /* Build configuration list for PBXNativeTarget "KITagList" */;
+			buildConfigurationList = 2A7150981808306D008411A2 /* Build configuration list for PBXNativeTarget "KITagCloud" */;
 			buildPhases = (
 				2A7150621808306D008411A2 /* Sources */,
 				2A7150631808306D008411A2 /* Frameworks */,
@@ -180,14 +166,14 @@
 			);
 			dependencies = (
 			);
-			name = KITagList;
+			name = KITagCloud;
 			productName = KITagList;
-			productReference = 2A7150661808306D008411A2 /* KITagList.app */;
+			productReference = 2A7150661808306D008411A2 /* KITagCloud.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2A7150861808306D008411A2 /* KITagListTests */ = {
+		2A7150861808306D008411A2 /* KITagCloudTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A71509B1808306D008411A2 /* Build configuration list for PBXNativeTarget "KITagListTests" */;
+			buildConfigurationList = 2A71509B1808306D008411A2 /* Build configuration list for PBXNativeTarget "KITagCloudTests" */;
 			buildPhases = (
 				2A7150831808306D008411A2 /* Sources */,
 				2A7150841808306D008411A2 /* Frameworks */,
@@ -198,9 +184,9 @@
 			dependencies = (
 				2A71508D1808306D008411A2 /* PBXTargetDependency */,
 			);
-			name = KITagListTests;
+			name = KITagCloudTests;
 			productName = KITagListTests;
-			productReference = 2A7150871808306D008411A2 /* KITagListTests.xctest */;
+			productReference = 2A7150871808306D008411A2 /* KITagCloudTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2A7150611808306D008411A2 /* Build configuration list for PBXProject "KITagList" */;
+			buildConfigurationList = 2A7150611808306D008411A2 /* Build configuration list for PBXProject "KITagCloud" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -231,8 +217,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2A7150651808306D008411A2 /* KITagList */,
-				2A7150861808306D008411A2 /* KITagListTests */,
+				2A7150651808306D008411A2 /* KITagCloud */,
+				2A7150861808306D008411A2 /* KITagCloudTests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,9 +228,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7150821808306D008411A2 /* Images.xcassets in Resources */,
-				2A7150741808306D008411A2 /* InfoPlist.strings in Resources */,
-				2A71507D1808306D008411A2 /* Main.storyboard in Resources */,
+				2A7150B818083DCB008411A2 /* Images.xcassets in Resources */,
+				2A7150B618083DCB008411A2 /* Main.storyboard in Resources */,
+				2A7150B718083DCB008411A2 /* InfoPlist.strings in Resources */,
+				2A7150BA18083DCB008411A2 /* KITagCloud-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +239,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7150931808306D008411A2 /* InfoPlist.strings in Resources */,
+				2A7150CB18083DD9008411A2 /* InfoPlist.strings in Resources */,
+				2A7150CC18083DD9008411A2 /* KITagCloudTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +251,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7150801808306D008411A2 /* KIViewController.m in Sources */,
-				2A71507A1808306D008411A2 /* KIAppDelegate.m in Sources */,
-				2A7150A1180830A8008411A2 /* KITagList.m in Sources */,
-				2A7150761808306D008411A2 /* main.m in Sources */,
+				2A7150BC18083DCB008411A2 /* KIViewController.m in Sources */,
+				2A7150D118083E37008411A2 /* KITagCloud.m in Sources */,
+				2A7150BD18083DCB008411A2 /* main.m in Sources */,
+				2A7150B918083DCB008411A2 /* KIAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7150951808306D008411A2 /* KITagListTests.m in Sources */,
+				2A7150CD18083DD9008411A2 /* KITagListTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,32 +271,32 @@
 /* Begin PBXTargetDependency section */
 		2A71508D1808306D008411A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2A7150651808306D008411A2 /* KITagList */;
+			target = 2A7150651808306D008411A2 /* KITagCloud */;
 			targetProxy = 2A71508C1808306D008411A2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2A7150721808306D008411A2 /* InfoPlist.strings */ = {
+		2A7150A718083DCB008411A2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2A7150731808306D008411A2 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2A71507B1808306D008411A2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A71507C1808306D008411A2 /* Base */,
+				2A7150A818083DCB008411A2 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2A7150911808306D008411A2 /* InfoPlist.strings */ = {
+		2A7150A918083DCB008411A2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2A7150921808306D008411A2 /* en */,
+				2A7150AA18083DCB008411A2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A7150C718083DD9008411A2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A7150C818083DD9008411A2 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -394,9 +382,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KITagList/KITagList-Prefix.pch";
-				INFOPLIST_FILE = "KITagList/KITagList-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "KITagCloud/KITagCloud-Prefix.pch";
+				INFOPLIST_FILE = "KITagCloud/KITagCloud-Info.plist";
+				PRODUCT_NAME = KITagCloud;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -407,9 +395,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KITagList/KITagList-Prefix.pch";
-				INFOPLIST_FILE = "KITagList/KITagList-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "KITagCloud/KITagCloud-Prefix.pch";
+				INFOPLIST_FILE = "KITagCloud/KITagCloud-Info.plist";
+				PRODUCT_NAME = KITagCloud;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -431,7 +419,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "KITagListTests/KITagListTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KITagCloudTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -450,7 +438,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KITagList/KITagList-Prefix.pch";
 				INFOPLIST_FILE = "KITagListTests/KITagListTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KITagCloudTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -459,7 +447,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A7150611808306D008411A2 /* Build configuration list for PBXProject "KITagList" */ = {
+		2A7150611808306D008411A2 /* Build configuration list for PBXProject "KITagCloud" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A7150961808306D008411A2 /* Debug */,
@@ -468,7 +456,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A7150981808306D008411A2 /* Build configuration list for PBXNativeTarget "KITagList" */ = {
+		2A7150981808306D008411A2 /* Build configuration list for PBXNativeTarget "KITagCloud" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A7150991808306D008411A2 /* Debug */,
@@ -476,7 +464,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		2A71509B1808306D008411A2 /* Build configuration list for PBXNativeTarget "KITagListTests" */ = {
+		2A71509B1808306D008411A2 /* Build configuration list for PBXNativeTarget "KITagCloudTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A71509C1808306D008411A2 /* Debug */,

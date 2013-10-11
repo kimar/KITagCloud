@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2A7150651808306D008411A2"
                BuildableName = "KITagList.app"
-               BlueprintName = "KITagList"
-               ReferencedContainer = "container:KITagList.xcodeproj">
+               BlueprintName = "KITagCloud"
+               ReferencedContainer = "container:KITagCloud.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2A7150861808306D008411A2"
                BuildableName = "KITagListTests.xctest"
-               BlueprintName = "KITagListTests"
-               ReferencedContainer = "container:KITagList.xcodeproj">
+               BlueprintName = "KITagCloudTests"
+               ReferencedContainer = "container:KITagCloud.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A7150651808306D008411A2"
             BuildableName = "KITagList.app"
-            BlueprintName = "KITagList"
-            ReferencedContainer = "container:KITagList.xcodeproj">
+            BlueprintName = "KITagCloud"
+            ReferencedContainer = "container:KITagCloud.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A7150651808306D008411A2"
             BuildableName = "KITagList.app"
-            BlueprintName = "KITagList"
-            ReferencedContainer = "container:KITagList.xcodeproj">
+            BlueprintName = "KITagCloud"
+            ReferencedContainer = "container:KITagCloud.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A7150651808306D008411A2"
             BuildableName = "KITagList.app"
-            BlueprintName = "KITagList"
-            ReferencedContainer = "container:KITagList.xcodeproj">
+            BlueprintName = "KITagCloud"
+            ReferencedContainer = "container:KITagCloud.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

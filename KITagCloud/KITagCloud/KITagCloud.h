@@ -1,6 +1,6 @@
 //
 //  KIViewController.h
-//  KITagList
+//  KITagCloud
 //
 //  Created by Marcus Kida on 11.10.13.
 //  Copyright (c) 2013 Marcus Kida. All rights reserved.
@@ -10,7 +10,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class KITagList;
+@class KITagCloud;
 
 @interface KITag : NSObject
 
@@ -20,15 +20,15 @@
 
 @end
 
-@protocol KITagListDelegate <NSObject>
+@protocol KITagCloudDelegate <NSObject>
 
 @required
 
-- (void)tagList:(KITagList *)tagList selectedTag:(KITag *)tag;
+- (void)tagCloud:(KITagCloud *)tagCloud selectedTag:(KITag *)tag;
 
 @end
 
-@interface KITagList : UIScrollView
+@interface KITagCloud : UIScrollView
 {
     UIView *view;
     NSArray *tagArray;
@@ -38,7 +38,7 @@
 
 @property (nonatomic) BOOL viewOnly;
 @property (nonatomic, strong) UIView *view;
-@property (nonatomic, weak) IBOutlet id<KITagListDelegate> tagDelegate;
+@property (nonatomic, weak) IBOutlet id<KITagCloudDelegate> tagDelegate;
 @property (nonatomic) BOOL automaticResize;
 @property (nonatomic, retain) UIFont *font;
 @property (nonatomic, assign) CGFloat labelMargin;

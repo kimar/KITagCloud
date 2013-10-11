@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:KITagList.xcodeproj">
+      location = "self:KITagCloud.xcodeproj">
    </FileRef>
 </Workspace>
