@@ -138,8 +138,6 @@
     BOOL gotPreviousFrame = NO;
     
     for (KITag *tag in tagArray) {
-
-        NSLog(@"Current Tag: %@", tag.text);
         
         KITagView *tagView = [[KITagView alloc] initWithTag:tag];
     
@@ -168,8 +166,6 @@
                     nextRect.origin = CGPointMake(newRect.origin.x + newRect.size.width + self.labelMargin, newRect.origin.y);
                 }
                 
-                NSLog(@"nextRect: %@", NSStringFromCGRect(newRect));
-                
                 CGSize sizeThatFits = CGSizeMake(self.frame.size.width, newRect.origin.y + newRect.size.height + self.bottomMargin + 1.0f);
                 if ((sizeThatFits.height > self.frame.size.height) && (previousFrame.origin.x + previousFrame.size.width + tagView.frame.size.width + self.labelMargin > self.frame.size.width)) {
                     KITag *endTag = [KITag new];
@@ -179,18 +175,23 @@
                     endTag.tagType = KITagTypeMore;
                     
                     KITagView *endTagView = [[KITagView alloc] initWithTag:endTag];
+                    endTagView.backgroundColor = [UIColor darkGrayColor];
                     [endTagView updateWithString:endTag.text
                                             font:self.font
-                              constrainedToWidth:previousFrame.size.width - (self.horizontalPadding * 2)
+                              constrainedToWidth:self.frame.size.width - (self.horizontalPadding * 2)
                                          padding:CGSizeMake(self.horizontalPadding, self.verticalPadding)
-                                    minimumWidth:previousFrame.size.width/1.85];
+                                    minimumWidth:self.minimumWidth];
                     
-                    endTagView.backgroundColor = [UIColor darkGrayColor];
-                    [endTagView setFrame:previousFrame];
+                    CGRect endTagViewFrame = endTagView.frame;
+                    endTagViewFrame.origin = previousFrame.origin;
+                    [endTagView setFrame:endTagViewFrame];
                     UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchedTag:)];
                     [endTagView setUserInteractionEnabled:YES];
                     [endTagView addGestureRecognizer:gesture];
+                    
+                    [[[self subviews] lastObject] removeFromSuperview];
                     [self addSubview:endTagView];
+                    
                     return;
                 }
             }
