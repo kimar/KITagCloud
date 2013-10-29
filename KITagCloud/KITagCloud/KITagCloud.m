@@ -1,6 +1,6 @@
 //
-//  KIViewController.m
-//  KITagList
+//  KITagCloud.m
+//  KITagCloud
 //
 //  Created by Marcus Kida on 11.10.13.
 //  Copyright (c) 2013 Marcus Kida. All rights reserved.
@@ -136,9 +136,11 @@
     
     CGRect previousFrame = CGRectZero;
     BOOL gotPreviousFrame = NO;
-
+    
     for (KITag *tag in tagArray) {
 
+        NSLog(@"Current Tag: %@", tag.text);
+        
         KITagView *tagView = [[KITagView alloc] initWithTag:tag];
     
         [tagView updateWithString:tag.text
@@ -157,6 +159,41 @@
             }
             newRect.size = tagView.frame.size;
             [tagView setFrame:newRect];
+            
+            if (self.taglimitEnabled) {
+                CGRect nextRect = CGRectZero;
+                if (newRect.origin.x + newRect.size.width + tagView.frame.size.width + self.labelMargin > self.frame.size.width) {
+                    nextRect.origin = CGPointMake(0, newRect.origin.y + tagView.frame.size.height + self.bottomMargin);
+                } else {
+                    nextRect.origin = CGPointMake(newRect.origin.x + newRect.size.width + self.labelMargin, newRect.origin.y);
+                }
+                
+                NSLog(@"nextRect: %@", NSStringFromCGRect(newRect));
+                
+                CGSize sizeThatFits = CGSizeMake(self.frame.size.width, newRect.origin.y + newRect.size.height + self.bottomMargin + 1.0f);
+                if ((sizeThatFits.height > self.frame.size.height) && (previousFrame.origin.x + previousFrame.size.width + tagView.frame.size.width + self.labelMargin > self.frame.size.width)) {
+                    KITag *endTag = [KITag new];
+                    endTag.text = @"…";
+                    endTag.backgroundColor = [UIColor darkGrayColor];
+                    endTag.textColor = [UIColor whiteColor];
+                    endTag.tagType = KITagTypeMore;
+                    
+                    KITagView *endTagView = [[KITagView alloc] initWithTag:endTag];
+                    [endTagView updateWithString:endTag.text
+                                            font:self.font
+                              constrainedToWidth:previousFrame.size.width - (self.horizontalPadding * 2)
+                                         padding:CGSizeMake(self.horizontalPadding, self.verticalPadding)
+                                    minimumWidth:previousFrame.size.width/1.85];
+                    
+                    endTagView.backgroundColor = [UIColor darkGrayColor];
+                    [endTagView setFrame:previousFrame];
+                    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchedTag:)];
+                    [endTagView setUserInteractionEnabled:YES];
+                    [endTagView addGestureRecognizer:gesture];
+                    [self addSubview:endTagView];
+                    return;
+                }
+            }
         }
         
         previousFrame = tagView.frame;
@@ -164,15 +201,12 @@
         
         [tagView setBackgroundColor:tagView.originalTag.backgroundColor];
         
-        // Davide Cenzi, added gesture recognizer to label
-        UITapGestureRecognizer* gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchedTag:)];
-        // if labelView is not set userInteractionEnabled, you must do so
+        UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchedTag:)];
         [tagView setUserInteractionEnabled:YES];
         [tagView addGestureRecognizer:gesture];
-        NSLog(@"Added Gesture Recognizer");
-        
-        [self addSubview:tagView];
 
+        [self addSubview:tagView];
+    
     }
     
     sizeFit = CGSizeMake(self.frame.size.width, previousFrame.origin.y + previousFrame.size.height + self.bottomMargin + 1.0f);

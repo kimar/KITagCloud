@@ -1,5 +1,5 @@
 //
-//  KIViewController.h
+//  KITagCloud.h
 //  KITagCloud
 //
 //  Created by Marcus Kida on 11.10.13.
@@ -10,6 +10,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    KITagTypeNormal = 0,
+    KITagTypeMore
+} KITagType;
+
 @class KITagCloud;
 
 @interface KITag : NSObject
@@ -17,6 +22,7 @@
 @property (strong) NSString *text;
 @property (strong) UIColor *textColor;
 @property (strong) UIColor *backgroundColor;
+@property (assign) KITagType tagType;
 
 @end
 
@@ -40,6 +46,7 @@
 @property (nonatomic, strong) UIView *view;
 @property (nonatomic, weak) IBOutlet id<KITagCloudDelegate> tagDelegate;
 @property (nonatomic) BOOL automaticResize;
+@property (nonatomic) BOOL taglimitEnabled;
 @property (nonatomic, retain) UIFont *font;
 @property (nonatomic, assign) CGFloat labelMargin;
 @property (nonatomic, assign) CGFloat bottomMargin;
