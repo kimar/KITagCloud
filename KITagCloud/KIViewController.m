@@ -37,6 +37,7 @@
         [tags addObject:tag];
     }
     
+    [_tagList setTaglimitEnabled:YES];
     [_tagList setTags:tags];
     [self.view addSubview:_tagList];
 }
@@ -51,7 +52,7 @@
 - (void) tagCloud:(KITagCloud *)tagCloud selectedTag:(KITag *)tag
 {
     [[[UIAlertView alloc] initWithTitle:@"Tag selected!"
-                                message:[NSString stringWithFormat:@"\"%@\" has been selected!", tag.text]
+                                message:[NSString stringWithFormat:@"\"%@\" -> \"%@\" has been selected!", tag.text, (tag.tagType == KITagTypeMore)?@"KITagTypeMore":@"KITagTypeNormal"]
                                delegate:nil
                       cancelButtonTitle:@"OK"
                       otherButtonTitles:nil, nil] show];
