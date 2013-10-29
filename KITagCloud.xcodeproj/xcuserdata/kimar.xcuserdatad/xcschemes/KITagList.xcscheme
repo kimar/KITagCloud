@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2A7150651808306D008411A2"
-               BuildableName = "KITagList.app"
+               BuildableName = "KITagCloud.app"
                BlueprintName = "KITagCloud"
                ReferencedContainer = "container:KITagCloud.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2A7150861808306D008411A2"
-               BuildableName = "KITagListTests.xctest"
+               BuildableName = "KITagCloudTests.xctest"
                BlueprintName = "KITagCloudTests"
                ReferencedContainer = "container:KITagCloud.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A7150651808306D008411A2"
-            BuildableName = "KITagList.app"
+            BuildableName = "KITagCloud.app"
             BlueprintName = "KITagCloud"
             ReferencedContainer = "container:KITagCloud.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A7150651808306D008411A2"
-            BuildableName = "KITagList.app"
+            BuildableName = "KITagCloud.app"
             BlueprintName = "KITagCloud"
             ReferencedContainer = "container:KITagCloud.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A7150651808306D008411A2"
-            BuildableName = "KITagList.app"
+            BuildableName = "KITagCloud.app"
             BlueprintName = "KITagCloud"
             ReferencedContainer = "container:KITagCloud.xcodeproj">
          </BuildableReference>

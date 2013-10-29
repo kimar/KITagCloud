@@ -17,7 +17,6 @@
 		2A7150B718083DCB008411A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A7150A918083DCB008411A2 /* InfoPlist.strings */; };
 		2A7150B818083DCB008411A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7150AB18083DCB008411A2 /* Images.xcassets */; };
 		2A7150B918083DCB008411A2 /* KIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7150AD18083DCB008411A2 /* KIAppDelegate.m */; };
-		2A7150BA18083DCB008411A2 /* KITagCloud-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A7150AE18083DCB008411A2 /* KITagCloud-Info.plist */; };
 		2A7150BC18083DCB008411A2 /* KIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7150B418083DCB008411A2 /* KIViewController.m */; };
 		2A7150BD18083DCB008411A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7150B518083DCB008411A2 /* main.m */; };
 		2A7150CB18083DD9008411A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A7150C718083DD9008411A2 /* InfoPlist.strings */; };
@@ -231,7 +230,6 @@
 				2A7150B818083DCB008411A2 /* Images.xcassets in Resources */,
 				2A7150B618083DCB008411A2 /* Main.storyboard in Resources */,
 				2A7150B718083DCB008411A2 /* InfoPlist.strings in Resources */,
-				2A7150BA18083DCB008411A2 /* KITagCloud-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +461,7 @@
 				2A71509A1808306D008411A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A71509B1808306D008411A2 /* Build configuration list for PBXNativeTarget "KITagCloudTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +470,7 @@
 				2A71509D1808306D008411A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
