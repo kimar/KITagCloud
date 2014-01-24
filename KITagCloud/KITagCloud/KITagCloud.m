@@ -281,6 +281,7 @@
 - (void)dealloc
 {
     _label = nil;
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end
